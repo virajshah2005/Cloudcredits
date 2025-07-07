@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Prediction Result - House Price Predictor{% endblock %}
+{% block content %}
+<div class="container py-5">
+    <div class="card shadow rounded mx-auto" style="max-width: 600px; background: #fefefe;">
+        <div class="card-header bg-primary text-white text-center rounded-top">
+            <h3 class="mb-0">Prediction Result</h3>
+        </div>
+        <div class="card-body text-center">
+            <p class="display-5 fw-bold text-success">Estimated House Price</p>
+            <p class="display-4 fw-bold">${{ prediction }} <small class="text-muted">(in $1000s)</small></p>
+            <a href="/" class="btn btn-outline-primary mt-4 px-5">Make Another Prediction</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

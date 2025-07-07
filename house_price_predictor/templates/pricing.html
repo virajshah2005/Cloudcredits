@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}Pricing - House Price Predictor{% endblock %}
+{% block content %}
+<div class="card p-4 shadow-sm">
+    <h1>Pricing Plans</h1>
+    <p>Choose a plan that fits your needs:</p>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card border-primary mb-3">
+                <div class="card-header bg-primary text-white">Basic</div>
+                <div class="card-body">
+                    <h5 class="card-title">$0 / month</h5>
+                    <p class="card-text">Access to basic house price predictions with limited features.</p>
+                    <ul>
+                        <li>Up to 10 predictions per month</li>
+                        <li>Email support</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border-success mb-3">
+                <div class="card-header bg-success text-white">Pro</div>
+                <div class="card-body">
+                    <h5 class="card-title">$29 / month</h5>
+                    <p class="card-text">Advanced features for frequent users and professionals.</p>
+                    <ul>
+                        <li>Unlimited predictions</li>
+                        <li>Priority email support</li>
+                        <li>Custom reports</li>
+                    </ul>
+                    <a href="#" class="btn btn-success">Subscribe</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border-warning mb-3">
+                <div class="card-header bg-warning text-white">Enterprise</div>
+                <div class="card-body">
+                    <h5 class="card-title">Contact Us</h5>
+                    <p class="card-text">Tailored solutions for large businesses and agencies.</p>
+                    <ul>
+                        <li>Dedicated account manager</li>
+                        <li>Custom integrations</li>
+                        <li>24/7 support</li>
+                    </ul>
+                    <a href="#" class="btn btn-warning text-white">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

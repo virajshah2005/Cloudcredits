@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Home - House Price Predictor{% endblock %}
+{% block content %}
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold">Predict Your House Price with Confidence</h1>
+        <p class="lead mb-4">Leverage our state-of-the-art machine learning model to get accurate and reliable house price predictions tailored to your needs.</p>
+        <img src="https://media.istockphoto.com/id/1442148484/photo/3d-rendering-of-modern-suburban-house-in-the-garden.jpg?s=612x612&w=0&k=20&c=8Iu_h5cFOEnlPz4_n2nfSUtOyfM_a-hHx9rmlxMF2rI=" alt="Modern House" class="img-fluid rounded shadow mx-auto d-block" style="max-height: 400px; width: 100%; object-fit: cover;" />
+    </div>
+    <div class="card p-5 shadow mx-auto" style="max-width: 720px; border-radius: 1.5rem; background: #ffffffcc;">
+        <form method="POST" action="/predict" novalidate>
+            <div class="row g-4">
+                {% for feature in feature_names %}
+                <div class="col-md-6">
+                    <label for="{{ feature }}" class="form-label text-capitalize fw-semibold">{{ feature.replace('_', ' ') }}</label>
+                    <input type="number" step="any" class="form-control form-control-lg" id="{{ feature }}" name="{{ feature }}" placeholder="Enter {{ feature.replace('_', ' ') }}" required />
+                </div>
+                {% endfor %}
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg w-100 mt-4 shadow-lg">Predict Price</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
