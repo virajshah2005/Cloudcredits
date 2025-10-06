@@ -57,18 +57,6 @@ The model successfully predicts house prices with high accuracy and demonstrates
 
 ---
 
-## 🎥 Demo Video
-🔗 [Watch Demo on LinkedIn](https://linkedin.com/in/yourprofile)  
-
----
-
-## 👨‍💻 Author
-**Viraj Shah**  
-MSc-IT (Software Development), Gujarat University  
-Intern – Cloudcredits Technologies  
-
-📫 Contact: [info@cloudcreditstechnologies.in](mailto:info@cloudcreditstechnologies.in)
-
 # 🩺 Predicting Diabetes
 
 ## 🎯 Objective
@@ -135,14 +123,7 @@ It can be used to provide early predictions for diabetes risk based on key healt
 
 ---
 
-## 🎥 Demo Video
-🔗 [Watch Demo on LinkedIn](https://linkedin.com/in/yourprofile)
-
----
-
 ## 👨‍💻 Author
 **Viraj Shah**  
 MSc-IT (Software Development), Gujarat University  
 Intern – Cloudcredits Technologies  
-
-📫 Contact: [info@cloudcreditstechnologies.in](mailto:info@cloudcreditstechnologies.in)
