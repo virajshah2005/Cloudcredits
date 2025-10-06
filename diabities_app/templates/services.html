@@ -1,0 +1,40 @@
+{% extends "base_bootstrap.html" %}
+
+{% block title %}Services{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+  <h1 class="mb-4 text-center">Our Services</h1>
+  <p class="lead text-center mb-5">We offer comprehensive diabetes risk assessment and personalized health recommendations.</p>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1588776814546-1a7a1a7a1a7a?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Risk Assessment">
+        <div class="card-body">
+          <h5 class="card-title">Risk Assessment</h5>
+          <p class="card-text">Detailed analysis of your health parameters to assess diabetes risk accurately.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1581093588401-1a7a1a7a1a7a?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Personalized Plans">
+        <div class="card-body">
+          <h5 class="card-title">Personalized Plans</h5>
+          <p class="card-text">Customized health and lifestyle plans tailored to your unique profile.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1576765607923-1a7a1a7a1a7a?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Continuous Monitoring">
+        <div class="card-body">
+          <h5 class="card-title">Continuous Monitoring</h5>
+          <p class="card-text">Ongoing tracking and updates to help you stay on top of your health.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

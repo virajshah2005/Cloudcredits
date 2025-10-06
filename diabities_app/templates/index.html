@@ -1,0 +1,117 @@
+{% extends "base_bootstrap.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+  <h1 class="mb-4 text-center">Welcome to the Diabetes Prediction System</h1>
+
+  <!-- Features Section with Bootstrap Cards -->
+  <h2 class="mb-4">Our Features</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1588776814546-1a7a1a7a1a7a?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Accurate Predictions">
+        <div class="card-body">
+          <h5 class="card-title">Accurate Predictions</h5>
+          <p class="card-text">Our model provides highly accurate diabetes risk assessments.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1581093588401-1a7a1a7a1a7a?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="User Friendly">
+        <div class="card-body">
+          <h5 class="card-title">User Friendly</h5>
+          <p class="card-text">Easy to use interface for all users.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1576765607923-1a7a1a7a1a7a?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Personalized Advice">
+        <div class="card-body">
+          <h5 class="card-title">Personalized Advice</h5>
+          <p class="card-text">Get advice tailored to your health profile.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Prediction Form Section -->
+  <div class="mt-5">
+    <h2 class="mb-4">Predict Your Diabetes Risk</h2>
+    <form action="/predict" method="post" class="row g-3 needs-validation" novalidate>
+      <div class="col-md-3">
+        <label for="pregnancies" class="form-label">Pregnancies</label>
+        <input type="number" class="form-control" id="pregnancies" name="pregnancies" min="0" max="20" placeholder="0" required>
+        <div class="form-text">Range: 0 - 20</div>
+        <div class="invalid-feedback">Please enter a valid number of pregnancies.</div>
+      </div>
+      <div class="col-md-3">
+        <label for="glucose" class="form-label">Glucose</label>
+        <input type="number" class="form-control" id="glucose" name="glucose" min="0" max="250" placeholder="120" required>
+        <div class="form-text">Range: 0 - 250</div>
+        <div class="invalid-feedback">Please enter a valid glucose level.</div>
+      </div>
+      <div class="col-md-3">
+        <label for="bloodpressure" class="form-label">Blood Pressure</label>
+        <input type="number" class="form-control" id="bloodpressure" name="bloodpressure" min="30" max="180" placeholder="70" required>
+        <div class="form-text">Range: 30 - 180</div>
+        <div class="invalid-feedback">Please enter a valid blood pressure.</div>
+      </div>
+      <div class="col-md-3">
+        <label for="skinthickness" class="form-label">Skin Thickness</label>
+        <input type="number" class="form-control" id="skinthickness" name="skinthickness" min="5" max="100" placeholder="20" required>
+        <div class="form-text">Range: 5 - 100</div>
+        <div class="invalid-feedback">Please enter a valid skin thickness.</div>
+      </div>
+      <div class="col-md-3">
+        <label for="insulin" class="form-label">Insulin</label>
+        <input type="number" class="form-control" id="insulin" name="insulin" min="0" max="900" placeholder="79" required>
+        <div class="form-text">Range: 0 - 900</div>
+        <div class="invalid-feedback">Please enter a valid insulin level.</div>
+      </div>
+      <div class="col-md-3">
+        <label for="bmi" class="form-label">BMI</label>
+        <input type="number" class="form-control" id="bmi" name="bmi" min="10" max="70" step="0.1" placeholder="32.0" required>
+        <div class="form-text">Range: 10 - 70</div>
+        <div class="invalid-feedback">Please enter a valid BMI.</div>
+      </div>
+      <div class="col-md-3">
+        <label for="dpf" class="form-label">Diabetes Pedigree Function</label>
+        <input type="number" class="form-control" id="dpf" name="dpf" min="0.05" max="2.5" step="0.01" placeholder="0.5" required>
+        <div class="form-text">Range: 0.05 - 2.5</div>
+        <div class="invalid-feedback">Please enter a valid diabetes pedigree function value.</div>
+      </div>
+      <div class="col-md-3">
+        <label for="age" class="form-label">Age</label>
+        <input type="number" class="form-control" id="age" name="age" min="10" max="100" placeholder="45" required>
+        <div class="form-text">Range: 10 - 100</div>
+        <div class="invalid-feedback">Please enter a valid age.</div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Predict Diabetes</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+
+<script>
+// Bootstrap form validation
+(() => {
+  'use strict'
+  const forms = document.querySelectorAll('.needs-validation')
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
+{% endblock %}

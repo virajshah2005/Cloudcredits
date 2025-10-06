@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Prediction Result{% endblock %}
+
+{% block content %}
+<section class="result-container">
+    <h2>Your Diabetes Prediction Result:</h2>
+    <p>{{ prediction }}</p>
+    <a href="/"><button>Go Back to Form</button></a>
+</section>
+{% endblock %}

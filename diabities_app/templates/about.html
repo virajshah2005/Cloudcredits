@@ -1,0 +1,58 @@
+{% extends "base_bootstrap.html" %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+  <h1 class="mb-4 text-center">About Our Diabetes Prediction System</h1>
+  <p class="lead text-center mb-5">Our system uses advanced machine learning algorithms to help you assess your risk of diabetes and take proactive steps towards better health.</p>
+
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card shadow-sm h-100">
+        <img src="https://images.unsplash.com/photo-1588776814546-1a7a1a7a1a7a?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Our Mission">
+        <div class="card-body">
+          <h5 class="card-title">Our Mission</h5>
+          <p class="card-text">To empower individuals with accurate and timely diabetes risk assessments, enabling healthier lifestyle choices and better disease management.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card shadow-sm h-100">
+        <img src="https://images.unsplash.com/photo-1581093588401-1a7a1a7a1a7a?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Our Vision">
+        <div class="card-body">
+          <h5 class="card-title">Our Vision</h5>
+          <p class="card-text">To be a leading platform in diabetes prediction and prevention, leveraging technology to improve global health outcomes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-5">
+    <h2 class="mb-4 text-center">Why Choose Us?</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100 shadow-sm text-center p-3">
+          <i class="bi bi-speedometer2 display-4 text-primary mb-3"></i>
+          <h5 class="card-title">Fast & Reliable</h5>
+          <p class="card-text">Quick predictions with high accuracy to help you make informed decisions.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm text-center p-3">
+          <i class="bi bi-shield-lock display-4 text-primary mb-3"></i>
+          <h5 class="card-title">Secure & Private</h5>
+          <p class="card-text">Your data is protected with industry-standard security measures.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm text-center p-3">
+          <i class="bi bi-people display-4 text-primary mb-3"></i>
+          <h5 class="card-title">User Support</h5>
+          <p class="card-text">Dedicated support team to assist you whenever needed.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends "base_bootstrap.html" %}
+
+{% block title %}Pricing{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+  <h1 class="mb-4 text-center">Pricing Plans</h1>
+  <p class="lead text-center mb-5">Choose a plan that fits your needs for diabetes risk assessment and health monitoring.</p>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100 shadow-sm text-center p-4">
+        <h5 class="card-title">Basic</h5>
+        <p class="display-4 text-primary">$9.99<span class="fs-5">/month</span></p>
+        <ul class="list-unstyled mb-4">
+          <li>Basic diabetes risk assessment</li>
+          <li>Email support</li>
+          <li>Access to community forums</li>
+        </ul>
+        <a href="#" class="btn btn-outline-primary">Choose Plan</a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-sm text-center p-4 border-primary">
+        <h5 class="card-title">Pro</h5>
+        <p class="display-4 text-primary">$29.99<span class="fs-5">/month</span></p>
+        <ul class="list-unstyled mb-4">
+          <li>Advanced risk assessment</li>
+          <li>Personalized health plans</li>
+          <li>Priority email support</li>
+        </ul>
+        <a href="#" class="btn btn-primary">Choose Plan</a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-sm text-center p-4">
+        <h5 class="card-title">Enterprise</h5>
+        <p class="display-4 text-primary">$99.99<span class="fs-5">/month</span></p>
+        <ul class="list-unstyled mb-4">
+          <li>Full access to all features</li>
+          <li>Dedicated account manager</li>
+          <li>24/7 phone support</li>
+        </ul>
+        <a href="#" class="btn btn-outline-primary">Choose Plan</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

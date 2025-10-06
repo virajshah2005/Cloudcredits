@@ -1,0 +1,43 @@
+{% extends "base_bootstrap.html" %}
+
+{% block title %}Blog{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+  <h1 class="mb-4 text-center">Latest Articles</h1>
+  <p class="lead text-center mb-5">Stay informed with the latest news and research on diabetes and health.</p>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1588776814546-1a7a1a7a1a7a?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Article 1">
+        <div class="card-body">
+          <h5 class="card-title">Understanding Diabetes: Causes and Prevention</h5>
+          <p class="card-text">Explore the key factors contributing to diabetes and how lifestyle changes can reduce risk.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1581093588401-1a7a1a7a1a7a?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Article 2">
+        <div class="card-body">
+          <h5 class="card-title">Advancements in Diabetes Treatment</h5>
+          <p class="card-text">Learn about the latest medical breakthroughs and technologies improving diabetes care.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1576765607923-1a7a1a7a1a7a?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Article 3">
+        <div class="card-body">
+          <h5 class="card-title">Healthy Eating Tips for Diabetes Management</h5>
+          <p class="card-text">Discover nutritious meal plans and dietary advice to help manage diabetes effectively.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

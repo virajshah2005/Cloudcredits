@@ -1,0 +1,31 @@
+{% extends "base_bootstrap.html" %}
+
+{% block title %}Testimonials{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+  <h1 class="mb-4 text-center">What Our Users Say</h1>
+  <p class="lead text-center mb-5">Read testimonials from users who have benefited from our diabetes prediction system.</p>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100 shadow-sm p-4">
+        <p class="card-text">"This system helped me understand my diabetes risk and take control of my health. Highly recommended!"</p>
+        <h5 class="card-title mt-3">- Sarah K.</h5>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-sm p-4">
+        <p class="card-text">"Accurate and easy to use. The personalized advice made a real difference in my lifestyle."</p>
+        <h5 class="card-title mt-3">- Michael B.</h5>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-sm p-4">
+        <p class="card-text">"The best diabetes prediction tool I've used. The support team is also very responsive."</p>
+        <h5 class="card-title mt-3">- Emily R.</h5>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
